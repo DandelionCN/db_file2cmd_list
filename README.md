@@ -2,13 +2,13 @@
 
 Python实现BaiduPCS-Go批量秒传与备份脚本生成
 
-# 项目引用：
+# 引用：
 
 https://github.com/iikira/BaiduPCS-Go
 
 基本思想：根据手动秒传的方法，只要知道file_size和文件md5值，再根据自己意愿添加一个文件名，就可以根据云端已有数据在自己云盘中"拷贝"一份副本。
 
-# 项目背景和思路
+# 背景和思路
 
 作者到目前有几十个云盘账号，文件管理起来比较麻烦，连账号切换都得靠Cookie Profile Switcher插件实现。再说，一个松鼠党必须时时保持警惕，应对账号被封资源丢失的痛苦。
 
@@ -33,7 +33,7 @@ pause
 
 直接利用下面的方法可以更快生成批处理脚本。
 
-# 项目代码
+# 代码
 
 [代码](https://github.com/silas1037/db_file2cmd_list/blob/v1.0/export_baiduyun_db.py)即可实现直接从db文件中提取信息并生成批处理脚本。
 
