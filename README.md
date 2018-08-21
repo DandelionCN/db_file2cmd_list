@@ -1,6 +1,6 @@
-# 利用BaiduPCS-Go批量秒传、备份与分享
+# BaiduPCS-Go批量秒传与备份脚本生成
 
-Python实现BaiduPCS-Go批量秒传与备份脚本生成
+Python实现BaiduPCS-Go批量秒传脚本生成，并利用其批量秒传、资源备份与分享文件
 
 # 引用：
 
