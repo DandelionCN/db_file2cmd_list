@@ -49,7 +49,7 @@ BaiduPCS-Go ru -length=8547037 -md5=C4F76103263BB44BCE152058054365B2 export_baid
 
 
 # 问题解决
-## 针对Unicode字符的解决方法
+## 针对字符乱码的解决方法
 有时文件名有类似”†“的Unicode字符，即使保存为Unicode或者utf-8文档，在cmd中运行也是乱码，这时候就需要转码。
 
 先将name.bat保存为utf-8编码的文档。
