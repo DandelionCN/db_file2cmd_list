@@ -76,6 +76,6 @@ pause
 
 [空目录产生命令](https://github.com/silas1037/db_file2cmd_list/blob/master/export_path.py)产生的脚本可以建立本地空目录，[文件建立命令](https://github.com/silas1037/db_file2cmd_list/blob/master/export_file.py)产生的脚本可以产生每一个文件均对应的“文件名.bat”。需要注意有两点：
 
-1.产生的两个批处理脚步需要放在同一目录运行。
+1.产生的两个批处理脚本需要放在同一目录运行。
 2.必须先运行[空目录产生命令](https://github.com/silas1037/db_file2cmd_list/blob/master/export_path.py)产生空目录，才能运行[文件建立命令](https://github.com/silas1037/db_file2cmd_list/blob/master/export_file.py)建立对应文件。
 3.均需要预输入` chcp 65001 `进行调用。
