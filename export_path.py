@@ -44,7 +44,7 @@ def create_baiduyun_filelist():
 
 
 root = Tk()
-root.title('百度云文件BaiduPCS-Go秒传批处理生成')
+root.title('百度云文件BaiduPCS-Go秒传批处理生成-空目录建立')
 db_select = Button(root, text=' 选择DB文件 ', command=select_db_file)
 db_select.grid(row=1, column=1, sticky=W, padx=(2, 0), pady=(2, 0))
 db = StringVar()
@@ -57,7 +57,7 @@ f = StringVar()
 file_path = Entry(root, width=80, textvariable=f)
 file_path['state'] = 'readonly'
 file_path.grid(row=2, column=2, padx=3, pady=3, sticky=W + E)
-create_btn = Button(root, text='生成BaiduPCS-Go秒传批处理命令行', command=create_baiduyun_filelist)
+create_btn = Button(root, text='生成空目录建立批处理命令行', command=create_baiduyun_filelist)
 create_btn.grid(row=3, column=1, columnspan=2, pady=(0, 2))
 root.columnconfigure(2, weight=1)
 root.mainloop()
