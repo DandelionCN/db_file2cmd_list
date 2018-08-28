@@ -1,16 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
-from tkinter import *
-from tkinter.filedialog import askopenfilename
-from tkinter.filedialog import asksaveasfilename
-from tkinter.ttk import *
 import sqlite3
-
 import os
-
-import numpy as np
-
 
 
 def dirlist(path, allfile):
