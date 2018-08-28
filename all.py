@@ -4,7 +4,6 @@
 import sqlite3
 import os
 
-
 def dirlist(path, allfile):
     filelist = os.listdir(path)
 
@@ -17,7 +16,6 @@ def dirlist(path, allfile):
             if 'Cache' in filepath:
                 allfile.append(filepath)
     return allfile
-
 
 filelist = dirlist("D:/tst/tst2", [])
 
