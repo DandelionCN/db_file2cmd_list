@@ -18,9 +18,11 @@ from hashlib import md5
 import time
 import os
 
-front_leng = 11
-input_path = "D:\\tst0002"
-output_path = "D:\\tst0002\\Mirror"
+
+input_path = "G:/hubs/新建文件夹 (2)/新建文件夹/now"
+output_path = "D:/tst0002/Mirror"
+
+standardlen = len(input_path)+1
 
 def calMD5(str):
     m = md5()
@@ -81,7 +83,7 @@ def dirlist1(path, allfile):
                 for filename in filelist: #广义
                     filepath = os.path.join(path, filename)
                     if os.path.isdir(filepath):
-                        fb.write("md "+'"'+ filepath[front_leng:] +'"'+"\n") #输入
+                        fb.write("md "+'"'+ filepath[standardlen:] +'"'+"\n") #输入
                         dirlist1(filepath, allfile)
                     # elif filepath.endswith('db'):
                         # if 'Cache' in filepath:
@@ -110,12 +112,12 @@ def dirlist2(path, allfile):
                         file_md5 = calMD5ForBigFile(filepath)
                         size = os.path.getsize(filepath)
                         print('BaiduPCS-Go ru -length=' + str(size) + ' -md5=' + str(file_md5) + ' "' + str(
-                            filepath[front_leng:].replace("\\", "/")) + '"')
+                            filepath[standardlen:].replace("\\", "/")) + '"')
                         fa.write('BaiduPCS-Go ru -length=' + str(size) + ' -md5=' + str(file_md5) + ' "' + str(
-                            filepath[front_leng:].replace("\\", "/")) + '"' + '\n')
+                            filepath[standardlen:].replace("\\", "/")) + '"' + '\n')
                         fb.write('echo BaiduPCS-Go ru -length=' + str(size) + ' -md5=' + str(file_md5) + ' "' + str(
-                            filepath[front_leng:].replace("\\", "/")) + '"' + '>>' + '"' +
-                                 filepath[front_leng:] + ".bat" + '"' + '\n')
+                            filepath[standardlen:].replace("\\", "/")) + '"' + '>>' + '"' +
+                                 filepath[standardlen:] + ".bat" + '"' + '\n')
 
                 return allfile
 
